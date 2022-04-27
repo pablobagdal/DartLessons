@@ -18,7 +18,7 @@ void main() {
   var numberAges = [];
 
   numbers.forEach((number) {
-    var age = number / 100;
+    int age = ((number - 1) / 100).toInt();
     age += age % 100 == 0 ? 0 : 1;
 
     numberAges.add(age);
