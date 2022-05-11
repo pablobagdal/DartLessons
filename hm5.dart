@@ -13,3 +13,53 @@
 // Выходные данные:
 
 // Вы должны получить список со значениями – [43, 12, 264]
+
+const alphabet = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z',
+];
+
+void main() {
+  var input_line = ["dart", "abc", "good luck"];
+  var output_line = [];
+
+  for (var i = 0; i < input_line.length; i++) {
+    output_line.add(wordValue(input_line[i]) * (i + 1));
+  }
+
+  print(output_line);
+}
+
+int numberOfLetter(letter) => alphabet.indexOf(letter) + 1;
+
+int wordValue(String word) {
+  int count = 0;
+  for (int i = 0; i < word.length; i++) {
+    count += numberOfLetter(word[i]);
+  }
+  return count;
+}
