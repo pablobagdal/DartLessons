@@ -24,23 +24,22 @@
 
 // [] => 0
 
-import 'dart:svg';
-
 void main() {
   var input_line1 = ["a", "ab", "abc"];
   var input_line2 = ["abcde", "ab", "abc"];
   var input_line3 = [];
 
-  print(listValue(input_line1));
+  print(countLengths(input_line1));
+  print(countLengths(input_line2));
+  print(countLengths(input_line3));
 }
 
-int listValue(List<String> list) {
-  int count = 0;
-
+int countLengths(List list) {
   if (list == []) return 0;
 
+  int count = 0;
   list.forEach((word) {
-    count += word.length;
+    count += word.toString().length;
   });
 
   return count;
