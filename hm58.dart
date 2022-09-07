@@ -1,7 +1,7 @@
 class Vehicle {
-  var color;
+  late String color;
 
-  Vehicle.withColor(color) {
+  Vehicle.withColor(String color) {
     this.color = color;
   }
 
@@ -13,7 +13,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  String brand;
+  late String brand = "LADA";
 
   Car(String brand, String color) : super.withColor(color) {
     this.brand = "BMW";
@@ -26,6 +26,6 @@ void main(List<String> args) {
   Vehicle myVehicle = Vehicle.withColor("black");
   myVehicle.start();
 
-  Car myCar = Car.from();
-  myCar.start();
+  // Car myCar = Car.withColor("niga", "black"); // = Car.withColor("red");
+  // myCar.start();
 }

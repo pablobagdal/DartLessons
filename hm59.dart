@@ -13,7 +13,7 @@ void main() {
 }
 
 class Vehicle {
-  String color;
+  late String color;
 
   Vehicle.fromColor(String color) {
     this.color = color;
@@ -26,7 +26,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  String carName;
+  late String carName;
 
   Car(String carName, String color) : super.fromColor(color) {
     this.carName = carName;
