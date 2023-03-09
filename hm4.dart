@@ -11,12 +11,12 @@ false
 */
 
 bool isExist(value, list) {
-  for(var element in list) {
-    if(element == value)
-      return true;
+  for (var element in list) {
+    if (element == value) return true;
   }
   return false;
 }
+
 void main() {
   List list = [60, 999, 14, "dart1", 45, 95, "dart", 1];
   var value1 = "dart";

@@ -5,11 +5,11 @@ void main() {
 
   print("");
 
-//   var moto = Moto();
-//   moto.type = "Sportbike";
-//   moto.color = "Green";
-//   moto.start();
-//   moto.roll();
+  // var moto = Moto();
+  // moto.type = "Sportbike";
+  // moto.color = "Green";
+  // moto.start();
+  // moto.roll();
 }
 
 class Vehicle {
@@ -40,8 +40,15 @@ class Car extends Vehicle {
 
 // class Moto extends Vehicle {
 //   String type;
+//   String color;
+
+//   Moto(String type, String color) : super.fromColor(color) {
+//     type = "Kawasaki";
+//   }
 
 //   void roll() {
 //     print("Rolled over in the air");
 //   }
+
+//   void start() {}
 // }

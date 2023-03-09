@@ -15,8 +15,9 @@ class Vehicle {
 class Car extends Vehicle {
   late String brand = "LADA";
 
-  Car(String brand, String color) : super.withColor(color) {
-    this.brand = "BMW";
+  Car.withColor(String brand, [String color = "gray"])
+      : super.withColor(color) {
+    this.brand = brand;
   }
 
   void start() => print("the $color car started");
@@ -26,6 +27,6 @@ void main(List<String> args) {
   Vehicle myVehicle = Vehicle.withColor("black");
   myVehicle.start();
 
-  // Car myCar = Car.withColor("niga", "black"); // = Car.withColor("red");
-  // myCar.start();
+  Car myCar = Car.withColor("Niga", "black"); // = Car.withColor("red");
+  myCar.start();
 }

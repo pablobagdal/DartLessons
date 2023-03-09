@@ -1,11 +1,14 @@
 //error & exception
 
 void main(List<String> args) {
-  List aa = [4, "jj", 54, true];
+  List list = [4, "jj", 54, true];
 
-  printElementOfList(aa, 1);
-  printElementOfList(aa, 2);
-  printElementOfList(aa, 555);
+  // list.forEach(
+  //   (element) => {printElementOfList(list, element)},
+  // );
+  printElementOfList(list, 1);
+  printElementOfList(list, 2);
+  printElementOfList(list, 555);
 }
 
 printElementOfList(List list, int index) {

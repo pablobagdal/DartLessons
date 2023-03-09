@@ -5,6 +5,7 @@ class Lamp {
   Lamp() {
     brightness = 6000;
     color = "blue";
+    print("conctructor.");
   }
 
   String info() {

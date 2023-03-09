@@ -51,7 +51,9 @@ void main() {
     output_line.add(wordValue(input_line[i]) * (i + 1));
   }
 
-  print(output_line);
+  for (var i = 0; i < output_line.length; i++) {
+    print("${input_line[i]} - ${output_line[i]}");
+  }
 }
 
 int numberOfLetter(letter) => alphabet.indexOf(letter) + 1;

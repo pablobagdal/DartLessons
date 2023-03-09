@@ -1,7 +1,12 @@
 void main() {
   Car car = Car("BMW", "Red");
+  Car car2 = Car("Jicku", "Yellow");
+
+  car2.checkMove();
+
   Car.setWheels(4);
   // Car.wheels = 4;
+
   car.checkMove();
 }
 
